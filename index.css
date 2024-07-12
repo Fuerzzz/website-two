@@ -1,0 +1,336 @@
+body{
+    background-color:white;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    /* border:1px solid black; */
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid black;
+}
+
+#lottie,#lottie1,#lottie2{
+    /* background-color:#0e0e0e; */
+    width:100%;
+    height:100%;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+}
+
+#head {
+    display: flex;
+    flex-direction: row; /* 修改为纵向排列 */
+    /* align-items: center; 
+    justify-content: center; */
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+/* #Body{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+} */
+
+
+
+.part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.part > div {
+    flex: 1; /* 让每个部分自动填充剩余的空间，均分父元素的宽度 */
+    margin: 0; /* 确保没有外边距 */
+}
+
+
+
+ul {
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    margin:10px;
+}
+
+li {
+    list-style-type: none;  /*去标点 */
+    width:100px;
+    margin:10px;
+    text-align: center;
+    /* font-family: "Fixedsys"; */
+    /* font-family: "Let's go Digital Regular"; */
+}
+
+li>a{
+    font-family: "Let's go Digital Regular";
+    font-size: 25px;
+    text-decoration:none;
+    font-size: 30px;
+}
+
+.logo{
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.logo1{
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    font-family: "Bauhaus 93";
+    font-size: 30px;
+}
+
+.contact{
+   display:flex;
+   justify-content: center;
+   align-items: center; 
+   margin-top:10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 100px;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* 主体部分 */
+
+#body {
+    display: flex;
+    flex-direction: row; /* 修改为纵向排列 */
+    align-items: center; 
+    justify-content: flex-start;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    font-family: Broadway;
+    font-size: 6rem;
+    /* padding-top: 0.1%;  */
+    background-image: url('one.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border: 3px solid black;
+}
+
+#font{
+    margin-left: 50px;
+    z-index:2;
+    width: 52%;
+    background-color: white; 
+    border: 12;
+    border-style:solid;
+    border-radius: 12px;
+    border-width:5px;
+}
+
+/*  */
+
+.part1, .part2, .part3 {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;  */
+    justify-content: flex-start;
+    width: 33%; /* 或者根据需要调整宽度 */
+    height: 250px;
+    background-color: white;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;  */
+    justify-content: flex-start;
+    width: 33%; /* 或者根据需要调整宽度 */
+    height: 250px;
+    background-color: white;
+    border-right: 3px solid black;
+    position: relative;
+}
+
+#font1{
+    width: 60%;
+    height: 110px;
+    margin: 20px;
+    font-family: "Constantia";
+    font-size: 30px;
+}
+
+#number{
+    align-items: flex-start;
+    font-family:"Old English Text MT";
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#per{
+    margin-top: 150px;
+    margin-left: -230px;
+    height: 25px;
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.button1{
+    margin-top: 190px;
+    margin-left: -135px;
+    height: 50px;
+    width: 200px;
+    font-family: "Berlin Sans FB";
+    font-size: 20px;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#lottie{
+    position: absolute;
+    z-index: 3;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    justify-content: flex-start;
+    width: 33%; /* 或者根据需要调整宽度 */
+    height: 250px;
+    background-color: white;
+    font-family: "Berlin Sans FB";
+    border-right: 3px solid black;
+}
+
+#font2{
+    font-size: 40px;
+    z-index: 2;
+}
+
+#Email{
+    font-size: 20px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+#empty{
+    width: 350px;
+    height: 250px;
+    overflow:hidden;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.6;
+    margin-left: 60px;
+}
+
+#empty1{
+    height: 100px;
+    z-index: 2;
+}
+
+#Fake{
+    font-size: 20px;
+    z-index: 2;
+}
+
+#number2{
+    font-size: 50px;
+    z-index: 2;
+}
+
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 33%; /* 或者根据需要调整宽度 */
+    height: 250px;
+    background-color: white;
+    font-family: "Gantelline Signature";
+}
+
+#font3{
+    font-size: 80px;
+}
+/* 底部*/
+
+#down{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+/* .text{
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.text{
+    display: inline-block;
+    min-width: 100%;
+    white-space: nowrap;
+    font-size: 50px;
+    text-align: center;
+    animation: moving 30s infinite;
+    animation-direction: alternate;
+    font-family: "Impact";
+}
+
+@keyframes moving {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(400px - 100%));
+    }
+}
